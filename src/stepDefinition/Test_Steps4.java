@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -54,8 +56,21 @@ public class Test_Steps4 extends AutomationTestCaseVerification{
 	//	cueHome.link_Contact().sendKeys("shubham stack");
 		cpage.textbox_name().sendKeys("Shubham Jain");
 		cpage.textbox_email().sendKeys("shubham.jain@cuelogic.co.in");
-		cpage.textbox_phone().sendKeys("8421485744");
-		cpage.textbox_company().sendKeys("cuelogic");
+		//cpage.textbox_message().sendKeys("8421485744");
+		cpage.textbox_message().sendKeys("cuelogic");
     }
+	
+	@Given("^fail testase$")
+	public void failTestcase() throws Exception {
+		cpage.textbox_company().sendKeys("cuelogic");
+	}
+	
+	@After
+	public void afterMethod(Scenario scenario) {
+	    if(scenario.isFailed()) {
+	         scenario.embed(((TakesScreenshot)Page.driver).getScreenshotAs(OutputType.BYTES), "image/png");
+	         AutomationLog.error("Screenshot has been taken and embed with HTML report");
+	    }
+	}
 
 }

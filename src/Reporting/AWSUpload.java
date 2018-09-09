@@ -1,7 +1,7 @@
-package Reporting;
-/**
+/*package Reporting;
+*//**
  * @author Shubham Jain
- * */
+ * *//*
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,9 +14,9 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 
 import automationframework.AutomationLog;
-/**
+*//**
  * Note : This Code only working and designed for Linux/Mac platform. Call/Use this class for linux/Mac platform only.
- * */
+ * *//*
 public class AWSUpload {
 
 	    int iExitValue;
@@ -95,3 +95,4 @@ public class AWSUpload {
 	    }
 	}
 
+*/

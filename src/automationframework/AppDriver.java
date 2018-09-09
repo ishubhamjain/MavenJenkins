@@ -126,7 +126,7 @@ public class AppDriver {
 		String OS = OSNAMES.split(" ")[0];
 		WebDriver driver = null;
 		String ExcelTest = xl.getXLcellValue("Controller", 1, 0);
-		System.out.println("My Excel Test = "+ExcelTest);
+		//System.out.println("My Excel Test = "+ExcelTest);
 		String browserType = browserToUse;
 		if (browserType.equalsIgnoreCase(FIREFOX)) {
 			setPropertyForBrowserFF(OS);

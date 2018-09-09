@@ -1,10 +1,8 @@
-stepDefinition\Test_Steps.class
 automationframework\ScreenshotAndTestNgReporterListener.class
 automationframework\Configuration.class
 Reporting\SendMailClass.class
 automationframework\WaitFor$3.class
 automationframework\AutomationTestCase.class
-Reporting\AWSUpload.class
 stepDefinition\Test_Steps4.class
 automationframework\WaitFor$1.class
 automationframework\ScreenshotAndTestNgReporterListener$1.class
@@ -32,7 +30,6 @@ test\java\Runner\CucumberOptions.class
 Reporting\ZipReports.class
 Reporting\GoogleDriveUpload$1.class
 automationframework\AutomationLog.class
-stepDefinition\Test_Steps3.class
 Reporting\GoogleDriveUpload.class
 automationframework\WaitFor$2.class
 test\java\Runner\ExtendedCucumberOptions.class

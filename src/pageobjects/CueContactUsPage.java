@@ -20,7 +20,7 @@ public class CueContactUsPage extends Page  {
 	
 	public WebElement textbox_name() throws Exception {
 		try {
-			element = driver.findElement(By.name("name"));
+			element = driver.findElement(By.name("firstname"));
 			AutomationLog.info("My name is found on Home Page");
 		} catch (Exception e) {
 			AutomationLog.error("My name is not found on Home Page");
@@ -40,9 +40,9 @@ public class CueContactUsPage extends Page  {
 		return element;
 	}
 	
-	public WebElement textbox_phone() throws Exception {
+	public WebElement textbox_message() throws Exception {
 		try {
-			element = driver.findElement(By.name("phone"));
+			element = driver.findElement(By.name("message"));
 			AutomationLog.info("My name is found on Home Page");
 		} catch (Exception e) {
 			AutomationLog.error("My name is not found on Home Page");
@@ -53,7 +53,7 @@ public class CueContactUsPage extends Page  {
 	
 	public WebElement textbox_company() throws Exception {
 		try {
-			element = driver.findElement(By.name("company"));
+			element = driver.findElement(By.name("dasdasd"));
 			AutomationLog.info("My name is found on Home Page");
 		} catch (Exception e) {
 			AutomationLog.error("My name is not found on Home Page");

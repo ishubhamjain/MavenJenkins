@@ -22,3 +22,6 @@ Feature: Testing Framework Action
 
 Scenario: Testing my Framework cases
 	Given Test1
+
+	Scenario: failtestcase
+	Given fail testase

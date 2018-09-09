@@ -33,7 +33,7 @@ import pageobjects.Page;
 @CucumberOptions(
 		features = "Feature"
 		,glue={"stepDefinition"}
-		,plugin = { "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json","junit:target/cucumber.xml"}
+		,plugin = { "pretty", "html:target/cucumber-default-report", "json:target/cucumber.json","junit:target/cucumber.xml"}
 //		,tags= {"@smoke"}  // Run tests in groups
 //		,monochrome = false
 //		,dryRun = true
